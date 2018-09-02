@@ -249,16 +249,18 @@ function Journal.Map:Display(rival)
 end
 
 function Journal.History:Display(rival)
-	local entries = Addon.Sets.RivalHistory[rival.id] or {}
-	self.Empty:SetShown(#entries == 0)
-	self:SetSelected(nil)
+	if Addon.Sets.RivalHistory ~= nil then
+		local entries = Addon.Sets.RivalHistory[rival.id] or {}
+		self.Empty:SetShown(#entries == 0)
+		self:SetSelected(nil)
 
-	for i, data in ipairs(entries) do
-		self[i]:Display(data)
-	end
+		for i, data in ipairs(entries) do
+			self[i]:Display(data)
+		end
 
-	for i = #entries+1, 9 do
-		self[i]:Hide()
+		for i = #entries+1, 9 do
+			self[i]:Hide()
+		end
 	end
 end
 
