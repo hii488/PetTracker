@@ -6,7 +6,7 @@ L.AlertUpgrades = 'Alert for Upgrades'
 L.AlertUpgradesTip = 'If disabled, the wild upgrades alert box will not be shown in combat, but upgrades will still be marked with a symbol (|TInterface\\GossipFrame\\AvailableQuestIcon:0:0:-1:-2|t).'
 L.AskForfeit = 'No upgrades are available. Quit battle?'
 L.AvailableBreeds = '\nAvailable Breeds:'
-L.Battles = 'Battles'
+L.Battles = 'Tamers'
 L.Breed = 'Breed'
 L.BreedExplanation = 'Determines how stats gained at each level are distributed.'
 L.CapturedPets = 'Show Captured'
@@ -36,6 +36,7 @@ L.UnlockActionsTip = 'If enabled, the enemy actions bar can be dragged to anywhe
 L.UpgradeAlert = 'Wild upgrades have appeared!'
 L.TotalRivals = 'Total Rivals'
 L.Victory = 'Victory'
+L.WorldQuest = 'Pet World Quests'
 L.ZoneTracker = 'Zone Tracker'
 
 for i = 1, C_PetJournal.GetNumPetSources() do
